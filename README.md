@@ -1,59 +1,242 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<div align="center">
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+# 🎬 Cinestar API
 
-## About Laravel
+**API REST para la gestión de una cadena de cines, construida con Laravel 12.**
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+[![Laravel](https://img.shields.io/badge/Laravel-12.x-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)](https://laravel.com)
+[![PHP](https://img.shields.io/badge/PHP-8.2+-777BB4?style=for-the-badge&logo=php&logoColor=white)](https://www.php.net)
+[![Sanctum](https://img.shields.io/badge/Sanctum-4.0-4f6df5?style=for-the-badge&logo=laravel&logoColor=white)](https://laravel.com/docs/sanctum)
+[![License](https://img.shields.io/badge/License-MIT-22c55e?style=for-the-badge)](LICENSE)
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+[![Estado](https://img.shields.io/badge/Estado-En_Desarrollo-yellow?style=flat-square)]()
+[![API](https://img.shields.io/badge/API-REST-blue?style=flat-square)]()
+[![PRs](https://img.shields.io/badge/PRs-Welcome-brightgreen?style=flat-square)]()
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+*Sistema backend para consultar cines, carteleras, funciones y gestionar reservas.*
 
-## Learning Laravel
+</div>
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+---
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## 📖 Descripción
 
-## Laravel Sponsors
+**Cinestar API** es el backend de un sistema de gestión para una cadena de cines. Está construido sobre **Laravel 12** y expone una **API REST** consumible por cualquier cliente (web, móvil o escritorio).
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+El objetivo del proyecto es centralizar toda la información del negocio cinematográfico —sedes, películas, salas, funciones, horarios y tickets— bajo una arquitectura limpia, escalable y segura mediante **Laravel Sanctum** para la autenticación por tokens.
 
-### Premium Partners
+> ⚠️ **Estado actual:** proyecto en fase temprana de desarrollo. La estructura base de Laravel está configurada y se está comenzando a construir la lógica de dominio.
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+---
 
-## Contributing
+## ✨ Características Previstas
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+| Módulo | Descripción | Estado |
+|---|---|---|
+| 🏢 **Cines** | Listado y gestión de sedes | 🚧 En desarrollo |
+| 🎥 **Películas** | Catálogo con información detallada | ⏳ Pendiente |
+| 🕒 **Funciones** | Horarios y programación por cine | ⏳ Pendiente |
+| 💺 **Salas** | Distribución de asientos por sala | ⏳ Pendiente |
+| 🎟️ **Tickets** | Reserva y compra de entradas | ⏳ Pendiente |
+| 👤 **Usuarios** | Registro y autenticación con Sanctum | ✅ Base lista |
+| 🔐 **Autenticación API** | Tokens de acceso con Laravel Sanctum | ✅ Configurado |
 
-## Code of Conduct
+---
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## 🛠️ Stack Tecnológico
 
-## Security Vulnerabilities
+- **Framework:** Laravel 12
+- **Lenguaje:** PHP 8.2+
+- **Autenticación:** Laravel Sanctum 4.0
+- **Base de datos:** MySQL / PostgreSQL / SQLite
+- **Gestor de dependencias:** Composer
+- **Testing:** PHPUnit
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+---
 
-## License
+## 📂 Estructura del Proyecto
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+```
+cinestar-laravel/
+│
+├── app/
+│   ├── Http/
+│   │   └── Controllers/
+│   │       ├── CinestarController.php         # Controlador web
+│   │       └── api/
+│   │           └── CinestarController.php     # Controlador API
+│   └── Models/
+│       └── User.php
+│
+├── routes/
+│   ├── api.php            # Rutas de la API (GET /cines)
+│   ├── web.php            # Rutas web
+│   └── console.php
+│
+├── database/
+│   ├── migrations/        # Migraciones de la BD
+│   └── seeders/
+│
+├── config/                # Configuración del framework
+├── public/                # Punto de entrada (index.php)
+├── resources/             # Vistas (Blade)
+├── tests/                 # Pruebas unitarias y de feature
+│
+├── .env.example
+├── composer.json
+├── artisan
+└── README.md
+```
+
+---
+
+## 🚀 Instalación y Configuración
+
+### Requisitos previos
+
+- PHP **8.2** o superior
+- Composer
+- MySQL / PostgreSQL (o SQLite para desarrollo rápido)
+- Node.js y NPM (opcional, para el frontend)
+
+### Pasos
+
+1. **Clona el repositorio:**
+   ```bash
+   git clone https://github.com/ArchinimeDev/cinestar-laravel.git
+   cd cinestar-laravel
+   ```
+
+2. **Instala las dependencias de PHP:**
+   ```bash
+   composer install
+   ```
+
+3. **Copia el archivo de entorno y genera la clave:**
+   ```bash
+   cp .env.example .env
+   php artisan key:generate
+   ```
+
+4. **Configura tu base de datos** en el archivo `.env`:
+   ```env
+   DB_CONNECTION=mysql
+   DB_HOST=127.0.0.1
+   DB_PORT=3306
+   DB_DATABASE=cinestar
+   DB_USERNAME=root
+   DB_PASSWORD=
+   ```
+
+5. **Ejecuta las migraciones:**
+   ```bash
+   php artisan migrate
+   ```
+
+6. **Inicia el servidor de desarrollo:**
+   ```bash
+   php artisan serve
+   ```
+
+   La API estará disponible en: **`http://127.0.0.1:8000`**
+
+---
+
+## 🔌 Endpoints de la API
+
+| Método | Endpoint | Descripción | Estado |
+|---|---|---|---|
+| `GET` | `/api/cines` | Obtiene el listado de cines | ✅ Implementado |
+| `POST` | `/api/register` | Registro de usuario | ⏳ Pendiente |
+| `POST` | `/api/login` | Inicio de sesión (devuelve token) | ⏳ Pendiente |
+| `POST` | `/api/logout` | Cierre de sesión | ⏳ Pendiente |
+| `GET` | `/api/peliculas` | Catálogo de películas | ⏳ Pendiente |
+| `GET` | `/api/funciones` | Funciones por cine y fecha | ⏳ Pendiente |
+
+### Ejemplo de respuesta
+
+**`GET /api/cines`**
+```json
+{
+  "data": [
+    {
+      "id": 1,
+      "nombre": "Cinestar Salaverry",
+      "direccion": "Av. Salaverry 2456, Jesús María",
+      "ciudad": "Lima"
+    }
+  ],
+  "message": "Registros encontrados"
+}
+```
+
+---
+
+## 🗺️ Roadmap
+
+- [x] Configuración inicial de Laravel 12
+- [x] Instalación y configuración de Laravel Sanctum
+- [x] Endpoint básico `GET /api/cines`
+- [ ] Modelo y migración de `Cine`
+- [ ] Modelo y migración de `Pelicula`
+- [ ] Modelo y migración de `Sala` y `Funcion`
+- [ ] CRUD completo de cada entidad
+- [ ] Autenticación de usuarios con tokens
+- [ ] Reserva de tickets
+- [ ] Documentación con Swagger / OpenAPI
+- [ ] Tests unitarios y de integración
+- [ ] Despliegue en producción
+
+---
+
+## 🧪 Testing
+
+Ejecuta la suite de pruebas con:
+
+```bash
+php artisan test
+```
+
+o con PHPUnit directamente:
+
+```bash
+./vendor/bin/phpunit
+```
+
+---
+
+## 🤝 Contribuciones
+
+Las contribuciones son bienvenidas. Para contribuir:
+
+1. Haz **Fork** del repositorio
+2. Crea una rama: `git checkout -b feature/nueva-funcionalidad`
+3. Haz commit: `git commit -m "Añade nueva funcionalidad"`
+4. Sube los cambios: `git push origin feature/nueva-funcionalidad`
+5. Abre un **Pull Request**
+
+Por favor, asegúrate de seguir las convenciones de código de **PSR-12** y de incluir tests cuando aplique.
+
+---
+
+## 📄 Licencia
+
+Este proyecto está bajo la licencia **MIT**. Consulta el archivo [LICENSE](LICENSE) para más detalles.
+
+---
+
+## 👤 Autor
+
+**ArchinimeDev**
+
+[![GitHub](https://img.shields.io/badge/GitHub-ArchinimeDev-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ArchinimeDev)
+
+---
+
+<div align="center">
+
+### ⭐ Si te gusta el proyecto, dale una estrella en GitHub
+
+**Hecho con ❤️ y mucho café ☕ usando Laravel**
+
+</div>
